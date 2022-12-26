@@ -17,7 +17,7 @@ This website is a clone of a local real estate website. The actual website is dy
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Real Estate Website Clone](https://mehargiri.github.io/Real-Estate-Website-Clone/)
 
 ## My process
 
