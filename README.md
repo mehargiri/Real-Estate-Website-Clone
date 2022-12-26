@@ -13,7 +13,7 @@
 
 ### The challenge
 
-This website is a clone of a local real estate website. The actual website is dynamic with house listings that can be updated by the user. However, I reacreated the website to practice my vanilla JavaScript and CSS skills. Thereforem this clone website is static with interactive elements such as back to the top button and an accordion-like sub menu.
+This website is a clone of a local real estate website. The actual website is dynamic with house listings that can be updated by the user. However, I recreated the website to practice my vanilla JavaScript and CSS skills. Therefore, this clone website is static with interactive elements such as back to the top button and an accordion-like sub menu.
 
 ### Links
 
@@ -29,7 +29,7 @@ This website is a clone of a local real estate website. The actual website is dy
 
 ### What I learned
 
-Since this was the first time I decided to recreate a large website while I was studying JavaScript and CSS, I had some diffiulty understanding how CSS properties and JavsScript's DOM works. With the completion of this project, my understanding of CSS properties and the DOM tree greatly improved.
+Since this was the first time I decided to recreate a large website while I was studying JavaScript and CSS, I had some difficulty understanding how CSS properties and JavasScript's DOM works. With the completion of this project, my understanding of CSS properties and the DOM tree greatly improved.
 
 ### Continued development
 

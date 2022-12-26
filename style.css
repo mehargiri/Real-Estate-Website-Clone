@@ -144,7 +144,8 @@ nav {
    Note: the given padding ensures
    that the enitre element acts like a link when hovered or focused over */
 .nav-menu-container-items > a {
-	padding: 60.5px 20.5px 60.5px 20.5px;
+	/* padding: 60.5px 20.5px 60.5px 20.5px; */
+	padding: 60.5px 10px 60.5px 10px;
 	font-weight: bold;
 	font-size: 15px;
 }
