@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Everest Realty Ltd., Brokerage - Buy, Sell & Invest | Call Everest</title>
+  </head>
+
+  <body>
+
+    <!-- Main Header with social media links -->
+
+    <header id="top">
+      <div class="header-content-container">
+        <ul class="header-left-container">
+          <li class="header-left-container-items">
+            <i class="material-icons">smartphone</i>+1 (905) 956-4449
+          </li>
+          <li class="header-left-container-items">
+            <i class="material-icons">email</i> marketing@everesthomes.ca
+          </li>
+          <li class="header-left-container-items">
+            <i class="material-icons">schedule</i>Mon - Fri: 10:00 - 16:00
+          </li>
+        </ul>
+        <ul class="header-right-container">
+          <li class="header-right-container-items"><a href="https://www.facebook.com/"
+              class="header-right-container-links"><img loading="lazy" src="./Icons/facebook-square.svg" width = "24px" height="24px" alt="Facebook Logo"></a></li>
+          <li class="header-right-container-items"><a href="https://www.instagram.com/"
+              class="header-right-container-links"><img loading="lazy" src="./Icons/instagram.svg" width = "24px" height="24px"
+                alt="Instagram Logo"></a></li>
+          <li class="header-right-container-items"><a href="https://www.linkedin.com/"
+              class="header-right-container-links"><img loading="lazy" src="./Icons/linkedin-square.svg" width = "24px" height="24px"
+                alt="Linkedin Logo"></a></li>
+          <li class="header-right-container-items"><a href="https://www.youtube.com/"
+              class="header-right-container-links"><img loading="lazy" src="./Icons/youtube.svg" width = "24px" height="24px"
+                alt="Youtube Logo"></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Navigation Links and Dropdown Menu -->
+
+    <nav>
+      <div class="nav-container">
+        <div class="logo-container">
+          <a href="#">
+            <picture>
+              <source srcset="./Images/everest-realty-main-logo.webp" type="image/webp">
+              <source srcset="./Images/everest-realty-main-logo.png" type="image/png">
+              <img src="./Images/everest-realty-main-logo.png" alt="Company Logo">
+            </picture>
+          </a>
+        </div>
+        <input type="checkbox" id="toggle-menu" onchange="uncheck()">
+        <label for="toggle-menu" class="hamburger-btn"></label>
+        <ul class="nav-menu-container">
+          <li class="nav-menu-container-items"><a href="https://www.twitter.com/">Home</a></li>
+          <li class="nav-menu-container-items"><a id="broker" href="https://www.9gag.com/">Broker of Record</a></li>
+          <li class="nav-menu-container-items drop-parent">
+            <a id="about" href="#">About Us <i class="fa fa-caret-down"></i> </a>
+            <input type="checkbox"  id="about-menu" class="accordion-input" onchange="change()">
+            <label for="about-menu" class="accordion-label"></label>
+            <ul class="nav-drop-container">
+              <li class="nav-drop-items" id="drop-about"><a href="#">Our Vision</a></li>
+              <li class="nav-drop-items" id="drop-about"><a href="#">Our Services</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-container-items drop-parent">
+            <a id="listings" href="#">Listings  <i class="fa fa-caret-down"></i></a>
+            <input type="checkbox"  id="listings-menu" class="accordion-input">
+            <label for="listings-menu" class="accordion-label"></label>
+            <ul class="nav-drop-container">
+              <li class="nav-drop-items" id="drop-listings"><a href="#">Search MLS</a></li>
+              <li class="nav-drop-items" id="drop-listings"><a href="#">Toronto Listing</a></li>
+              <li class="nav-drop-items" id="drop-listings"><a href="#">Mississauga Listing</a></li>
+              <li class="nav-drop-items" id="drop-listings"><a href="#">Brampton Listing</a></li>
+              <li class="nav-drop-items" id="drop-listings"><a href="#">Guelph London Listing</a></li>
+              <li class="nav-drop-items" id="drop-listings"><a href="#">Windsor Listing</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-container-items drop-parent"><a id="mortgages" href="#">Mortgages <i class="fa fa-caret-down"></i> </a>
+            <input type="checkbox" id="mortgages-menu" class="accordion-input">
+            <label for="mortgages-menu" class="accordion-label"></label>
+            <ul class="nav-drop-container">
+              <li class="nav-drop-items" id="drop-mortgages"><a href="#">Mortgage Rate</a></li>
+              <li class="nav-drop-items" id="drop-mortgages"><a href="#">Mortgage Payment Calculator</a></li>
+              <li class="nav-drop-items" id="drop-mortgages"><a href="#">CMHC Insurance Calculator</a></li>
+              <li class="nav-drop-items" id="drop-mortgages"><a href="#">Land Transfer Tax</a></li>
+              <li class="nav-drop-items" id="drop-mortgages"><a href="#">Mortgage Affordability Calculator</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-container-items"><a href="https://www.linkedin.com/">FAQs</a></li>
+          <li class="nav-menu-container-items drop-parent"><a id="team" href="https://www.sciencealert.com/">Our Team <i class="fa fa-caret-down"></i> </a>
+            <input type="checkbox" id="team-menu" class="accordion-input">
+            <label for="team-menu" class="accordion-label" id="team-label"></label>
+            <ul class="nav-drop-container">
+              <li class="nav-drop-items" id="drop-team"><a href="#">Agents</a></li>
+              <li class="nav-drop-items" id="drop-team"><a href="#">Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-container-items"><a href="https://www.reddit.com/">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Embed video below header and nav -->
+
+    <!-- Need to add an image overlay that hides once user clicks on it and the video below starts to play -->
+    <section class="main-video-section">
+      <div class="main-video-container">
+        <iframe loading="lazy" title="Company Video" id="main-video" wmode="transparent"
+          src="https://www.youtube.com/embed/hSHKJheZEM8" frameborder="0"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Section with listings and a form -->
+    <div class="main-section-container">
+      <section class="main-section">
+        <div class="featured-listings-container">
+          <div class="title-container">
+            <h2>Our <strong>Listings</strong></h2>
+            <p><em>Check out our listings</em></p>
+          </div>
+
+          <div class="listing-cards-container">
+
+            <!-- Property Number 1 -->
+            <article class="listing-cards">
+              <div class="listing-image-container" id="property-1"
+                style="background-image: url(./Images/1602-18-Knightsbridge-Road-Brampton-7.webp);">
+                <div class="feature-banner">Featured
+                  <span class="triangle"></span>
+                </div>
+                <div class="sale-banner">For Sale</div>
+                <i class="material-icons heart js-heart-1">favorite
+                  <div class="add-to-favorite-container">
+                    Add to favourite
+                  </div>
+                </i>
+                <div class="image-overlay-container"></div>
+                <div class="listing-link"><a href="https://www.google.ca/"><span>View</span><span>Property</span></a>
+                </div>
+              </div>
+              <div class="listing-details-container">
+                <div class="left-detail-container">
+                  <h2 class="property-address">For Sale - 1602 - 18 Knightsbridge Road, Brampton</h2>
+                  <div class="property-room-container">
+                    <div class="left-room-detail">
+                      <p class="room-type">Bedrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/bed_resized.svg" width="51px" height="38px" alt="Bed Icon">
+                        <p class="room-quantity">3</p>
+                      </div>
+                    </div>
+                    <div class="right-room-detail">
+                      <p class="room-type">Bathrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/shower_resized.svg" width="51px" height="38px" alt="Shower Icon">
+                        <p class="room-quantity">2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="right-detail-container">
+                  <div class="property-price-container">
+                    <p class="property-status">For Sale</p>
+                    <p class="property-price">$649,000</p>
+                  </div>
+                  <div class="property-author-container">
+                    <p class="by">By</p>
+                    <p class="author">Pritam Tripathi</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Property Number 2 -->
+            <article class="listing-cards">
+              <div class="listing-image-container" id="property-2"
+                style="background-image: url(./Images/1212-darnley-blvd.webp);">
+                <div class="sale-banner">For Sale</div>
+                <i class="material-icons heart js-heart-2">favorite
+                  <div class="add-to-favorite-container">
+                    Add to favourite
+                  </div>
+                </i>
+                <div class="image-overlay-container"></div>
+                <div class="listing-link"><a href="https://www.google.ca/"><span>View</span><span>Property</span></a>
+                </div>
+              </div>
+              <div class="listing-details-container">
+                <div class="left-detail-container">
+                  <h2 class="property-address">For Sale - 1212 DARNLEY Blvd, London</h2>
+                  <div class="property-room-container">
+                    <div class="left-room-detail">
+                      <p class="room-type">Bedrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/bed_resized.svg" width="51px" height="38px" alt="Bed Icon">
+                        <p class="room-quantity">4</p>
+                      </div>
+                    </div>
+                    <div class="right-room-detail">
+                      <p class="room-type">Bathrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/shower_resized.svg" width="51px" height="38px" alt="Shower Icon">
+                        <p class="room-quantity">3</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-detail-container">
+                  <div class="property-price-container">
+                    <p class="property-status">For Sale</p>
+                    <p class="property-price">$949,000</p>
+                  </div>
+                  <div class="property-author-container">
+                    <p class="by">By</p>
+                    <p class="author">Eric Giri</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Property Number 3 -->
+            <article class="listing-cards">
+              <div class="listing-image-container" id="property-3"
+                style="background-image: url(./Images/603-4091-Sheppard-Avenue-East-Toronto-11.webp);">
+                <div class="sale-banner">For Sale</div>
+                <i class="material-icons heart js-heart-3">favorite
+                  <div class="add-to-favorite-container">
+                    Add to favourite
+                  </div>
+                </i>
+                <div class="image-overlay-container"></div>
+                <div class="listing-link"><a href="https://www.google.ca/"><span>View</span><span>Property</span></a>
+                </div>
+              </div>
+              <div class="listing-details-container">
+                <div class="left-detail-container">
+                  <h2 class="property-address">For Sale - 603 - 4091 Sheppard Ave E, Toronto</h2>
+                  <div class="property-room-container">
+                    <div class="left-room-detail">
+                      <p class="room-type">Bedrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/bed_resized.svg" width="51px" height="38px" alt="Bed Icon">
+                        <p class="room-quantity">2</p>
+                      </div>
+
+                    </div>
+                    <div class="right-room-detail">
+                      <p class="room-type">Bathrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/shower_resized.svg" width="51px" height="38px" alt="Shower Icon">
+                        <p class="room-quantity">1</p>
+                      </div>
+                    </div>
+                    <div class="room-area-detail">
+                      <p class="room-type">Area</p>
+                      <div class="icon-wrapper area-icon">
+                        <img loading="lazy" src="./Icons/area.svg" width="32px" height="32px" alt="Area Icon">
+                        <p><strong>900-999</strong>sq ft</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-detail-container">
+                  <div class="property-price-container">
+                    <p class="property-status">For Sale</p>
+                    <p class="property-price">$399,000</p>
+                  </div>
+                  <div class="property-author-container">
+                    <p class="by">By</p>
+                    <p class="author">Shashi Thapa</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Property Number 4 -->
+            <article class="listing-cards">
+              <div class="listing-image-container" id="property-4"
+                style="background-image: url(./Images/1903-9075-jane-street-vaughan-N5472535-1-p.webp);">
+                <div class="rent-banner">For Rent</div>
+                <i class="material-icons heart js-heart-4">favorite
+                  <div class="add-to-favorite-container">
+                    Add to favourite
+                  </div>
+                </i>
+                <div class="image-overlay-container"></div>
+                <div class="listing-link"><a href="https://www.google.ca/"><span>View</span><span>Property</span></a>
+                </div>
+              </div>
+              <div class="listing-details-container">
+                <div class="left-detail-container">
+                  <h2 class="property-address">FOR RENT - 1903 - 9075 Jane St, Vaughan</h2>
+                  <div class="property-room-container">
+                    <div class="left-room-detail">
+                      <p class="room-type">Bedrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/bed_resized.svg" width="51px" height="38px" alt="Bed Icon">
+                        <p class="room-quantity">2+1</p>
+                      </div>
+
+                    </div>
+                    <div class="right-room-detail">
+                      <p class="room-type">Bathrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/shower_resized.svg" width="51px" height="38px" alt="Shower Icon">
+                        <p class="room-quantity">2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-detail-container">
+                  <div class="property-price-container">
+                    <p class="property-status">For Rent</p>
+                    <p class="property-price">$2,500 Monthly</p>
+                  </div>
+                  <div class="property-author-container">
+                    <p class="by">By</p>
+                    <p class="author">Nilam Rijal</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Property Number 5 -->
+            <article class="listing-cards">
+              <div class="listing-image-container" id="property-5"
+                style="background-image: url(./Images/225-sackville-st-e.webp);">
+                <div class="rent-banner">For rent</div>
+                <i class="material-icons heart js-heart-5">favorite
+                  <div class="add-to-favorite-container">
+                    Add to favourite
+                  </div>
+                </i>
+                <div class="image-overlay-container"></div>
+                <div class="listing-link"><a href="https://www.google.ca/"><span>View</span><span>Property</span></a>
+                </div>
+              </div>
+              <div class="listing-details-container">
+                <div class="left-detail-container">
+                  <h2 class="property-address">FOR RENT - #1307 - 225 SACKVILLE ST E, Toronto</h2>
+                  <div class="property-room-container">
+                    <div class="left-room-detail">
+                      <p class="room-type">Bedrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/bed_resized.svg" width="51px" height="38px" alt="Bed Icon">
+                        <p class="room-quantity">1+1</p>
+                      </div>
+
+                    </div>
+                    <div class="right-room-detail">
+                      <p class="room-type">Bathrooms</p>
+                      <div class="icon-wrapper">
+                        <img loading="lazy" src="./Icons/shower_resized.svg" width="51px" height="38px" alt="Shower Icon">
+                        <p class="room-quantity">2</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right-detail-container">
+                  <div class="property-price-container">
+                    <p class="property-status">For Rent</p>
+                    <p class="property-price">$2,175 Monthly</p>
+                  </div>
+                  <div class="property-author-container">
+                    <p class="by">By</p>
+                    <p class="author">Sarita Shrestha</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="page-number-container">
+            <button>1</button>
+            <button>2</button>
+          </div>
+        </div>
+        <div class="form-container">
+          <div class="background-image-container">
+            <div class="gradient-background-container">
+              <div class="big-title-container">
+                <h1>Why List/Buy</h1>
+                <h1>With Us?</h1>
+                <h2>Looking to Sell an existing property or Buy a new one?</h2>
+                <h2>Look no further!</h2>
+              </div>
+              <div class="main-points-container">
+                <ul class="main-points-list">
+                  <li><span>In real estate business for 20 years</span></li>
+                  <li><span>Access to several local real estate boards</span></li>
+                  <li><span>Branches across Ontario</span></li>
+                  <li><span>We'll soon be expanding across Canada</span></li>
+                  <li><span>40+ professional Sales Representatives</span></li>
+                  <li><span>Free and accurate home valuation</span></li>
+                  <li><span>Customer-centric</span></li>
+                </ul>
+              </div>
+              <div class="end-title-container">
+                <h1>Talk To Us</h1>
+                <h2 id="end-title-h2">Get in touch with our real estate experts</h2>
+              </div>
+              <form action="#" class="contact-form">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <input type="text" name="phone" id="phone" placeholder="Phone number">
+                <textarea name="status" id="status" rows="4" placeholder="Are you looking to buy or sell?"></textarea>
+                <button class="send-btn">Send</button>
+              </form>
+              <div class="tagline-container">
+                <h1>Satisfaction</h1>
+                <h1>Guranteed</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Meet agents section -->
+
+    <section class="agents-title-container">
+      <h1>Meet Our <strong>Agents </strong></h1>
+      <em>Get in touch with our real estate experts</em>
+    </section>
+
+
+    <!-- Agent Card Section -->
+
+    <section class="agent-cards-outer-container">
+      <!-- Agent Number 1 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/ashirbad_subedi_250x250.webp" type="image/webp">
+              <source srcset="./Images/Agents/ashirbad_subedi_250x250.jpg" type="image/jpeg">
+              <img loading="lazy" src="./Images/Agents/ashirbad_subedi_250x250.jpg" alt="Ashirbad Subedi Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Ashirwad Subedi</h3>
+            <p class="phone">647-867-7973</p>
+            <p class="email">ashirwad@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 2 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/amandeep_singh_dhillon.webp" type="image/webp">
+              <source srcset="./Images/Agents/amandeep_singh_dhillon.jpg" type="image/jpeg">
+              <img loading="lazy" src="./Images/Agents/amandeep_singh_dhillon.jpg" alt="Amandeep Singh Dhillon Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Amandeep Singh Dhillon</h3>
+            <p class="phone">647-524-8251</p>
+            <p class="email">zdhillonrealtor@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 3 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/babu_kandel.webp" type="image/webp">
+              <source srcset="./Images/Agents/babu_kandel.jpg" type="image/jpeg">
+              <img loading="lazy" src="./Images/Agents/babu_kandel.jpg" alt="Babu Kandel Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Babu Kandel</h3>
+            <p class="phone">647-760-3295</p>
+            <p class="email">babu@everesthomes.ca</p>
+            <p class="amount">1</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 4 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/baljeet_kaur_juneja.webp" type="image/webp">
+              <source srcset="./Images/Agents/baljeet_kaur_juneja.jpg" type="image/jpeg">
+              <img loading="lazy" src="./Images/Agents/baljeet_kaur_juneja.jpg" alt="Baljeet Kaur Juneja Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Baljeet Kaur Juneja</h3>
+            <p class="phone">416-670-0690</p>
+            <p class="email">baljeet@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 5 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/Balaram_Kafley.webp" type="image/webp">
+              <source srcset="./Images/Agents/Balaram_Kafley.jpg" type="image/jpeg">
+              <img loading="lazy" src="./Images/Agents/Balaram_Kafley.jpg" alt="Balaram Kafley Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Balaram Kafley</h3>
+            <p class="phone">519-977-2098</p>
+            <p class="email">balaram@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 6 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/dhaka_tiwari.webp" type="image/webp">
+              <source srcset="./Images/Agents/dhaka_tiwari.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/dhaka_tiwari.jpg" alt="Dhaka Tiwari Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Dhaka Tiwari</h3>
+            <p class="phone">519-520-9032</p>
+            <p class="email">dhakat38@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 7 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/daya_tripathi.webp" type="image/webp">
+              <source srcset="./Images/Agents/daya_tripathi.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/daya_tripathi.jpg" alt="Daya Tripathi Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Daya Tripathi</h3>
+            <p class="phone">647-896-2669</p>
+            <p class="email">dayaneupane30@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 8 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/eric_giri.webp" type="image/webp">
+              <source srcset="./Images/Agents/eric_giri.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/eric_giri.jpg" alt="Eric Giri Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Eric Giri</h3>
+            <p class="phone">416-712-4054</p>
+            <p class="email">eric@everesthomes.ca</p>
+            <p class="amount">1</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 9 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/govinda_khatri.webp" type="image/webp">
+              <source srcset="./Images/Agents/govinda_khatri.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/govinda_khatri.jpg" alt="Govinda Khatri Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Govinda Khatri</h3>
+            <p class="phone">416-554-4296</p>
+            <p class="email">govinda@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 10 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/gagan_mavi.webp" type="image/webp">
+              <source srcset="./Images/Agents/gagan_mavi.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/gagan_mavi.jpg" alt="Gagan Mavi Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Gagan Mavi</h3>
+            <p class="phone">416-844-5546</p>
+            <p class="email">gagan@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 11 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/hum_gaire.webp" type="image/webp">
+              <source srcset="./Images/Agents/hum_gaire.jpg" type="image/webp">
+              <img loading="lazy" src="./Images/Agents/hum_gaire.jpg" alt="Hum Gaire Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Hum Gaire</h3>
+            <p class="phone">289-654-2467</p>
+            <p class="email">hum.realtor1@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 12 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/hitu_padesh.webp" type="image/webp">
+              <source srcset="./Images/Agents/hitu_padesh.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/hitu_padesh.jpg" alt="Hitu Padesh Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Hitu Padesh</h3>
+            <p class="phone">905-783-8181</p>
+            <p class="email">signsinfo@yahoo.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 13 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/herleen_kaur_gill.webp" type="image/webp">
+              <source srcset="./Images/Agents/herleen_kaur_gill.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/herleen_kaur_gill.jpg" alt="Herleen Kaur Gill Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Herleen Kaur Gill</h3>
+            <p class="phone">647-286-1232</p>
+            <p class="email">herleen@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 14 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/hasanpreet_singh_sidhu.webp" type="image/webp">
+              <source srcset="./Images/Agents/hasanpreet_singh_sidhu.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/hasanpreet_singh_sidhu.jpg" alt="Hasanpreet Singh Sidhu Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Hasanpreet Singh Sidhu</h3>
+            <p class="phone">226-899-4603</p>
+            <p class="email">hasanpreet121@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 15 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/harbax_juneja.webp" type="image/webp">
+              <source srcset="./Images/Agents/harbax_juneja.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/harbax_juneja.jpg" alt="Harbax Juneja Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Harbax Juneja</h3>
+            <p class="phone">416-988-3737</p>
+            <p class="email">harbax@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 16 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/Inderpreet_singh_juneja.webp" type="image/webp">
+              <source srcset="./Images/Agents/Inderpreet_singh_juneja.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/Inderpreet_singh_juneja.jpg" alt="Inderpreet Singh Juneja Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Inderpreet (Indy) Singh Juneja</h3>
+            <p class="phone">416-670-3000</p>
+            <p class="email">juneja_inderpreet@rogers.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 17 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/justin_seo.webp" type="image/webp">
+              <source srcset="./Images/Agents/justin_seo.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/justin_seo.jpg" alt="Justin Seo Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Justin Seo</h3>
+            <p class="phone">647-973-4335</p>
+            <p class="email">justin@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 18 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/J_birdi.webp" type="image/webp">
+              <source srcset="./Images/Agents/J_birdi.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/J_birdi.jpg" alt="J. Birdi Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>J. Birdi</h3>
+            <p class="phone">647-766-2728</p>
+            <p class="email">j.birdi@nekirm.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 19 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/Khem_raj_khanal.webp" type="image/webp">
+              <source srcset="./Images/Agents/Khem_raj_khanal.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/Khem_raj_khanal.jpg" alt="Khem Raj Khanal Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Khem Raj Khanal</h3>
+            <p class="phone">519-981-6098</p>
+            <p class="email">khem@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 20 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/kash_timsina.webp" type="image/webp">
+              <source srcset="./Images/Agents/kash_timsina.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/kash_timsina.jpg" alt="Kash Timsina Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Kash Timsina</h3>
+            <p class="phone">226-637-5274</p>
+            <p class="email">ptimisina@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 21 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/lok_doranga.webp" type="image/webp">
+              <source srcset="./Images/Agents/lok_doranga.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/lok_doranga.jpg" alt="Lok Doranga Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Lok Doranga</h3>
+            <p class="phone">647-707-5485</p>
+            <p class="email">lok@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 22 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/mohammad_hossain.webp" type="image/webp">
+              <source srcset="./Images/Agents/mohammad_hossain.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/mohammad_hossain.jpg" alt="Mohammad Hossain Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Mohammad Hossain</h3>
+            <p class="phone">902-717-8003</p>
+            <p class="email">mohammad@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 23 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/manoj_bist.webp" type="image/webp">
+              <source srcset="./Images/Agents/manoj_bist.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/manoj_bist.jpg" alt="Manoj Bist Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Manoj Bist</h3>
+            <p class="phone">416-732-1950</p>
+            <p class="email">manoj@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 24 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/nobledeep_singh_dhillon.webp" type="image/webp">
+              <source srcset="./Images/Agents/nobledeep_singh_dhillon.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/nobledeep_singh_dhillon.jpg" alt="Nobledeep Singh Dhillon Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Nobledeep Singh Dhillon</h3>
+            <p class="phone">647-390-0834</p>
+            <p class="email">nobledeepdhillon@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 25 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/nilam_rijal.webp" type="image/webp">
+              <source srcset="./Images/Agents/nilam_rijal.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/nilam_rijal.jpg" alt="Nilam Rijal Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Nilam Rijal</h3>
+            <p class="phone">647-923-5465</p>
+            <p class="email">nilam@everesthomes.ca</p>
+            <p class="amount">1</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 26 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/puspa_thapa.webp" type="image/webp">
+              <source srcset="./Images/Agents/puspa_thapa.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/puspa_thapa.jpg" alt="Puspa Thapa Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Puspa Thapa</h3>
+            <p class="phone">647-717-8435</p>
+            <p class="email">pushpa@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 27 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/puja_shrestha.webp" type="image/webp">
+              <source srcset="./Images/Agents/puja_shrestha.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/puja_shrestha.jpg" alt="Puja Shrestha Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Puja Shrestha</h3>
+            <p class="phone">437-997-5117</p>
+            <p class="email">puja@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 28 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/pritam_tripathi.webp" type="image/webp">
+              <source srcset="./Images/Agents/pritam_tripathi.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/pritam_tripathi.jpg" alt="Pritam Tripathi Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Pritam Tripathi</h3>
+            <p class="phone">647-916-6419</p>
+            <p class="email">pritam@everesthomes.ca</p>
+            <p class="amount">1</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 29 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/pitambar_bhattarai.webp" type="image/webp">
+              <source srcset="./Images/Agents/pitambar_bhattarai.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/pitambar_bhattarai.jpg" alt="Pitambar Bhattarai Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Pitambar Bhattarai</h3>
+            <p class="phone">647-766-4329</p>
+            <p class="email">emailpitambar@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 30 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/parshu_shrestha.webp" type="image/webp">
+              <source srcset="./Images/Agents/parshu_shrestha.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/parshu_shrestha.jpg" alt="Parsu Shrestha Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Parsu Shrestha</h3>
+            <p class="phone">289-400-5234</p>
+            <p class="email">parshu@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 31 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/razi_hassan.webp" type="image/webp">
+              <source srcset="./Images/Agents/razi_hassan.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/razi_hassan.jpg" alt="Razi Hassan Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Razi Hassan</h3>
+            <p class="phone">647-291-7294</p>
+            <p class="email">razi@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 32 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/ram_marahatta.webp" type="image/webp">
+              <source srcset="./Images/Agents/ram_marahatta.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/ram_marahatta.jpg" alt="Ram Marahatta Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Ram Marahatta</h3>
+            <p class="phone">647-333-5145</p>
+            <p class="email">ram@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 33 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/rajiv_bhatia.webp" type="image/webp">
+              <source srcset="./Images/Agents/rajiv_bhatia.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/rajiv_bhatia.jpg" alt="Rajiv Bhatia Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Rajiv Bhatia</h3>
+            <p class="phone">416-567-7562</p>
+            <p class="email">notifyrajiv@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 34 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/rajan_tamang.webp" type="image/webp">
+              <source srcset="./Images/Agents/rajan_tamang.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/rajan_tamang.jpg" alt="Rajan Tamang Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Rajan Tamang</h3>
+            <p class="phone">416-902-3985</p>
+            <p class="email">rajan@apexrealtors.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 35 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/siddharth_mann.webp" type="image/webp">
+              <source srcset="./Images/Agents/siddharth_mann.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/siddharth_mann.jpg" alt="Siddharth Mann Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Siddharth Mann</h3>
+            <p class="phone">647-588-7474</p>
+            <p class="email">sidmann19@hotmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 36 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/shashi_thapa.webp" type="image/webp">
+              <source srcset="./Images/Agents/shashi_thapa.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/shashi_thapa.jpg" alt="Shashi Thapa Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Shashi Thapa</h3>
+            <p class="phone">647-740-5563</p>
+            <p class="email">realtor@shashithapa.com</p>
+            <p class="amount">1</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 37 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/sarita_shrestha.webp" type="image/webp">
+              <source srcset="./Images/Agents/sarita_shrestha.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/sarita_shrestha.jpg" alt="Sarita Shrestha Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Sarita Shrestha</h3>
+            <p class="phone">647-402-7531</p>
+            <p class="email">shresthasarita@yahoo.com</p>
+            <p class="amount">1</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 38 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/sam_grewal.webp" type="image/webp">
+              <source srcset="./Images/Agents/sam_grewal.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/sam_grewal.jpg" alt="Sam Grewal Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Sam Grewal</h3>
+            <p class="phone">647-309-9133</p>
+            <p class="email">samratgrewal@gmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 39 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/tara_basnet.webp" type="image/webp">
+              <source srcset="./Images/Agents/tara_basnet.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/tara_basnet.jpg" alt="Tara Basnet Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Tara Basnet</h3>
+            <p class="phone">647-621-2842</p>
+            <p class="email">tara@everesthomes.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 40 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/tenzin_monlam.webp" type="image/webp">
+              <source srcset="./Images/Agents/tenzin_monlam.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/tenzin_monlam.jpg" alt="Tenzin Monlam Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Tenzin Monlam</h3>
+            <p class="phone">647-563-8882</p>
+            <p class="email">officialtenzinmonlam@hotmail.com</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- Agent Number 41 -->
+      <article class="agent-cards-inner-container">
+        <div class="agent-cards">
+          <div class="agent-image">
+            <picture>
+              <source srcset="./Images/Agents/urmila_tamang.webp" type="image/webp">
+              <source srcset="./Images/Agents/urmila_tamang.jpg" type="image/jpg">
+              <img loading="lazy" src="./Images/Agents/urmila_tamang.jpg" alt="Urmila Tamang Agent">
+            </picture>
+          </div>
+          <div class="agent-details">
+            <h3>Urmila Tamang</h3>
+            <p class="phone">416-902-3963</p>
+            <p class="email">urmila@apexrealtors.ca</p>
+            <p class="amount">0</p>
+            <p class="heading">Listed Properties</p>
+            <div class="agent-arrow">
+              <img loading="lazy" src="./Icons/right-arrow.svg" alt="Right Arrow">
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Van Animation Section -->
+    <section class="van-animation">
+      <div class="animation">
+        <img loading="lazy" src="./Icons/truck_no_background.png" alt="Company Van">
+        <p class="text-top">Free moving truck for our clients & charities</p>
+        <p class="text-bottom">Contact: 519-256-4449</p>
+
+      </div>
+      <button>Book Now</button>
+    </section>
+
+    <!-- End Video Section -->
+    <section class="end-video-outer-container">
+      <section class="end-video-container">
+        <!-- Video Title -->
+        <section class="end-video-title-container">
+          <h2>Our <strong>Videos</strong></h2>
+          <em>Watch our videos</em>
+        </section>
+
+        <!-- Center Video -->
+        <section class="center-video-container">
+          <iframe loading="lazy" title="Company Video" id="main-video" wmode="transparent"
+            src="https://www.youtube.com/embed/hSHKJheZEM8" frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <!-- Small Three Videos -->
+        <section class="small-video-container">
+          <article class="small-video-1">
+            <iframe loading="lazy" title="Company Video" id="main-video" wmode="transparent"
+              src="https://www.youtube.com/embed/hSHKJheZEM8" frameborder="0"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+          <article class="small-video-2">
+            <iframe loading="lazy" title="Company Video" id="main-video" wmode="transparent"
+              src="https://www.youtube.com/embed/hSHKJheZEM8" frameborder="0"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+          <article class="small-video-3">
+            <iframe loading="lazy" title="Company Video" id="main-video" wmode="transparent"
+              src="https://www.youtube.com/embed/hSHKJheZEM8" frameborder="0"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </article>
+        </section>
+      </section>
+    </section>
+
+    <!-- Footer  -->
+    <footer>
+      <div class="top-footer">
+        <div class="top-footer-inner-container">
+          <a href="#">Everest Realty Ltd., Brokerage</a>
+          <p>Leading you to the TOP!</p>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <p class="line-1">&copy; 2022. All rights reserved.</p>
+        <p class="line-2">Designed by Mehar Giri</p>
+        <p class="line-3">Inspired by Camp Seven Creatives</p>
+      </div>
+    </footer>
+
+    <!-- Scroll back to top button -->
+    <button id="back-to-top" aria-label="Back-To-Top-Button">
+      <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <script src="./script.js" async></script>
+  </body>
+
+</html>
